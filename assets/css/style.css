@@ -146,6 +146,7 @@ main .photo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 main .photo img {
@@ -221,11 +222,17 @@ footer .contact-email svg {
     max-width: 45rem;
     width: 100%;
   }
+
+  header {
+    padding-top: 1rem;
+  }
+
   main {
     display: flex;
     align-items: center;
     gap: 4.5rem;
-    padding-bottom: 16rem;
+    padding-top: 2rem;
+    padding-bottom: 18em;
   }
 
   main .apresentation {
@@ -252,10 +259,5 @@ footer .contact-email svg {
   main .apresentation .social-links .social-links__name {
     font-size: 25px;
     display: block;
-  }
-}
-@media (min-width: 1281px) {
-  .container {
-    width: 64rem;
   }
 }
