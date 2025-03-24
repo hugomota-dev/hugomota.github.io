@@ -91,8 +91,8 @@ ul {
 
 .container {
   position: relative;
-  max-width: 960px;
-  width: 100%;
+  max-width: 75rem;
+  width: 96%;
   margin: 0 auto;
   padding: 20px;
   background-color: var(--base);
@@ -207,19 +207,32 @@ footer .contact-email svg {
   height: 16px;
 }
 
-@media (min-width: 480px) {
+/* SM	min-width: 24em (384px) */
+@media (min-width: 24em) {
   .container {
+    max-width: 24rem;
     width: 440px;
     padding-left: 0;
     padding-right: 0;
   }
 }
-@media (min-width: 600px) {
+
+/* MD	min-width: 36em (576px) */
+@media (min-width: 36em) {
+  .container {
+    max-width: 34em;
+    width: 100%;
+  }
+
+  main {
+    padding-bottom: 6em;
+  }
 }
 
-@media (min-width: 768px) {
+/* LG	min-width: 48em (768px) */
+@media (min-width: 48em) {
   .container {
-    max-width: 45rem;
+    max-width: 46rem;
     width: 100%;
   }
 
@@ -232,7 +245,7 @@ footer .contact-email svg {
     align-items: center;
     gap: 4.5rem;
     padding-top: 2rem;
-    padding-bottom: 18em;
+    padding-bottom: 20em;
   }
 
   main .apresentation {
@@ -259,5 +272,17 @@ footer .contact-email svg {
   main .apresentation .social-links .social-links__name {
     font-size: 25px;
     display: block;
+  }
+}
+
+/* XL	min-width: 60em (960px) */
+@media (min-width: 60em) {
+  .container {
+    max-width: 58rem;
+    width: 100%;
+  }
+  main {
+    
+    padding-bottom: 22em;
   }
 }
