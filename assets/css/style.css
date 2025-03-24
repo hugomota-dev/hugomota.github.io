@@ -3,6 +3,7 @@
 :root {
   --base: #cfcfcf;
   --text: #212121;
+  --text-h1: #212121;
   --link: #504e4e;
   --link-hover: #0d100e;
   --link-visited: #494370;
@@ -14,7 +15,8 @@
   :root {
     --base: #212121;
     --text: #cfcfcf;
-    --link: #f9bc60;
+    --text-h1: #fff;
+    --link: #3ba738;
     --link-hover: #cfcfcf;
     --link-visited: #a7a0db;
   }
@@ -23,6 +25,7 @@
 [data-theme="light"] {
   --base: #cfcfcf;
   --text: #212121;
+  --text-h1: #212121;
   --link: #504e4e;
   --link-hover: #0d100e;
   --link-visited: #494370;
@@ -31,7 +34,7 @@
 [data-theme="dark"] {
   --base: #212121;
   --text: #cfcfcf;
-  --link: #f9bc60;
+  --link: #3ba738;
   --link-hover: #cfcfcf;
   --link-visited: #a7a0db;
 }
@@ -53,22 +56,30 @@ body {
   color: var(--text);
 }
 
+h1 {
+  color: var(--text-h1);
+}
+
+h2 {
+  color: var(--text);
+}
+
 a {
   color: var(--link);
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: var(--link-visited);
-}
+} */
 
 a:hover {
   color: var(--link-hover);
 }
 
-a:active {
+/* a:active {
   color: #333;
-}
+} */
 
 img {
   height: auto;
@@ -93,6 +104,7 @@ ul {
   position: relative;
   max-width: 75rem;
   width: 96%;
+  
   margin: 0 auto;
   padding: 20px;
   background-color: var(--base);
@@ -185,7 +197,11 @@ main .apresentation .social-links .social-links__list {
 }
 
 footer {
-  padding-top: 3rem;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  padding: 2rem;
   border-top: solid 1px hsla(213, 6%, 68%, 0.728);
 }
 
@@ -224,15 +240,12 @@ footer .contact-email svg {
     width: 100%;
   }
 
-  main {
-    padding-bottom: 6em;
-  }
 }
 
 /* LG	min-width: 48em (768px) */
 @media (min-width: 48em) {
   .container {
-    max-width: 46rem;
+    max-width: 42rem;
     width: 100%;
   }
 
@@ -245,7 +258,7 @@ footer .contact-email svg {
     align-items: center;
     gap: 4.5rem;
     padding-top: 2rem;
-    padding-bottom: 20em;
+    padding-bottom: 2em;
   }
 
   main .apresentation {
@@ -280,9 +293,5 @@ footer .contact-email svg {
   .container {
     max-width: 58rem;
     width: 100%;
-  }
-  main {
-    
-    padding-bottom: 22em;
   }
 }
