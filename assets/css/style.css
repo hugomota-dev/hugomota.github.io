@@ -118,6 +118,9 @@ header {
   padding-bottom: 2rem;
 }
 
+header nav a h2 {
+  color: #f5cc75;
+}
 /* Estilização do botão */
 #theme-toggle {
   background: var(--text);
