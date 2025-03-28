@@ -212,13 +212,13 @@ footer .footer__info {
   row-gap: 0.5rem;
 }
 
-footer .footer__info .footer__info-links {
+/* footer .footer__info .footer__info-links {
   color: #5e7861;
 }
 
 footer .footer__info .footer__info-links:hover {
   color: var(--link-hover);
-}
+} */
 
 footer .contact-email a {
   display: flex;
