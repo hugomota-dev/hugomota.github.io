@@ -26,7 +26,7 @@
   --base: #cfcfcf;
   --text: #212121;
   --text-h1: #212121;
-  --link: #504e4e;
+  --link: #ededed;
   --link-hover: #0d100e;
   --link-visited: #494370;
 }
@@ -34,7 +34,7 @@
 [data-theme="dark"] {
   --base: #212121;
   --text: #cfcfcf;
-  --link: #3ba738;
+  --link: #4fc24c;
   --link-hover: #cfcfcf;
   --link-visited: #a7a0db;
 }
@@ -104,7 +104,7 @@ ul {
   position: relative;
   max-width: 75rem;
   width: 96%;
-  
+
   margin: 0 auto;
   padding: 20px;
   background-color: var(--base);
@@ -197,10 +197,10 @@ main .apresentation .social-links .social-links__list {
 }
 
 footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  width:100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   padding: 2rem;
   border-top: solid 1px hsla(213, 6%, 68%, 0.728);
 }
@@ -239,7 +239,6 @@ footer .contact-email svg {
     max-width: 34em;
     width: 100%;
   }
-
 }
 
 /* LG	min-width: 48em (768px) */
