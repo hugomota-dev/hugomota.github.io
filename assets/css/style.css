@@ -16,6 +16,7 @@
     --base: #212121;
     --text: #cfcfcf;
     --text-h1: #fff;
+    --text-h2: #f5cc75;
     --link: #3ba738;
     --link-hover: #cfcfcf;
     --link-visited: #a7a0db;
@@ -25,8 +26,9 @@
 [data-theme="light"] {
   --base: #cfcfcf;
   --text: #212121;
-  --text-h1: #212121;
-  --link: #ededed;
+  --text-h1: #000;
+  --text-h2: #5F1F2B;
+  --link: #4d5416;
   --link-hover: #0d100e;
   --link-visited: #494370;
 }
@@ -119,7 +121,7 @@ header {
 }
 
 header nav a h2 {
-  color: #f5cc75;
+  color: var(--text-h2);
 }
 /* Estilização do botão */
 #theme-toggle {
