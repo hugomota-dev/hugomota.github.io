@@ -16,7 +16,7 @@
     --base: #212121;
     --text: #cfcfcf;
     --text-h1: #fff;
-    --text-h2: #f5cc75;
+    --text-h2: #86dfb4;
     --link: #3ba738;
     --link-hover: #cfcfcf;
     --link-visited: #a7a0db;
@@ -27,7 +27,7 @@
   --base: #cfcfcf;
   --text: #212121;
   --text-h1: #000;
-  --text-h2: #5F1F2B;
+  --text-h2: #12442c;
   --link: #4d5416;
   --link-hover: #0d100e;
   --link-visited: #494370;
@@ -202,11 +202,6 @@ main .apresentation .social-links .social-links__list {
 }
 
 footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  padding: 2rem;
   border-top: solid 1px hsla(213, 6%, 68%, 0.728);
 }
 
@@ -214,16 +209,9 @@ footer .footer__info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
   row-gap: 0.5rem;
 }
-
-/* footer .footer__info .footer__info-links {
-  color: #5e7861;
-}
-
-footer .footer__info .footer__info-links:hover {
-  color: var(--link-hover);
-} */
 
 footer .contact-email a {
   display: flex;
@@ -298,6 +286,13 @@ footer .contact-email svg {
     font-size: 25px;
     display: block;
   }
+  footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 /* XL	min-width: 60em (960px) */
@@ -306,4 +301,6 @@ footer .contact-email svg {
     max-width: 58rem;
     width: 100%;
   }
+ 
+
 }
