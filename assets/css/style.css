@@ -24,7 +24,7 @@
 }
 
 [data-theme="light"] {
-  --base: #cfcfcf;
+  --base: #e9e4e4;
   --text: #212121;
   --text-h1: #000;
   --text-h2: #12442c;
@@ -68,7 +68,15 @@ h2 {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  /* text-decoration: none; */
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+  outline: 2px solid #facc15; /* Amarelinho chamativo (usa Tailwind? é o amarelo-400) */
+  outline-offset: 4px; /* Distância da borda até o elemento */
+  border-radius: 4px; /* Borda arredondada, opcional mas fica show */
+  transition: outline 0.2s ease-in-out;
 }
 
 /* a:visited {
@@ -77,11 +85,14 @@ a {
 
 a:hover {
   color: var(--link-hover);
+  /* text-decoration: underline; */
 }
 
-/* a:active {
-  color: #333;
-} */
+a:focus {
+  
+  outline: none;
+}
+
 
 img {
   height: auto;
@@ -102,6 +113,10 @@ ul {
   list-style: none;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+
+}
 .container {
   position: relative;
   max-width: 75rem;
