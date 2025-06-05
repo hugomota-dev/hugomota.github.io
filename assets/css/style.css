@@ -36,6 +36,7 @@
 [data-theme="dark"] {
   --base: #212121;
   --text: #cfcfcf;
+  --text-h1: #fff;
   --link: #75f595;
   --link-hover: #cfcfcf;
   --link-visited: #a7a0db;
@@ -169,6 +170,8 @@ header nav a h2 {
 
 main {
   padding-bottom: 3rem;
+  margin: auto;
+  max-height: 100vh;
 }
 
 main .photo {
@@ -305,8 +308,19 @@ footer .contact-email svg {
 /* XL	min-width: 60em (960px) */
 @media (min-width: 60em) {
   .container {
-    max-width: 70rem;
+    max-width: 70em;
   }
+
+  main {
+    max-width: 65rem;
+    
+  }
+
+  main .apresentation .social-links .social-links__list {
+  display: flex;
+  justify-content:left;
+  gap: 3rem;
+}
 
   footer{
     margin-top: 50px !important;
