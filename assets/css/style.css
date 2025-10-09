@@ -74,19 +74,14 @@ a {
 }
 
 a:focus-visible {
-  outline: 2px solid #facc15; /* Amarelinho chamativo (usa Tailwind? é o amarelo-400) */
-  outline-offset: 4px; /* Distância da borda até o elemento */
-  border-radius: 4px; /* Borda arredondada, opcional mas fica show */
+  outline: 2px solid #facc15;
+  outline-offset: 4px;
+  border-radius: 4px;
   transition: outline 0.2s ease-in-out;
 }
 
-/* a:visited {
-  color: var(--link-visited);
-} */
-
 a:hover {
   color: var(--link-hover);
-  /* text-decoration: underline; */
 }
 
 a:focus {
@@ -119,7 +114,6 @@ button {
   position: relative;
   max-width: 75rem;
   width: 96%;
-
   margin: 0 auto;
   padding: 20px;
   background-color: var(--base);
@@ -136,6 +130,7 @@ header {
 header nav a h2 {
   color: var(--text-h2);
 }
+
 /* Estilização do botão */
 #theme-toggle {
   background: var(--text);
@@ -216,7 +211,11 @@ main .apresentation .social-links .social-links__list {
   gap: 3rem;
 }
 
+/* FOOTER */
+
 footer {
+  margin-top: 8rem;
+  width: 100%;
   border-top: solid 1px hsla(213, 6%, 68%, 0.728);
 }
 
@@ -226,7 +225,6 @@ footer .footer__box {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
-  text-align: center;
   row-gap: 1rem;
 }
 
@@ -257,30 +255,6 @@ footer .contact-email svg {
     max-width: 34em;
     width: 100%;
   }
-}
-
-/* LG	min-width: 48em (768px) */
-@media (min-width: 48em) {
-  .container {
-    max-width: 42rem;
-    width: 100%;
-  }
-
-  header {
-    padding-top: 1rem;
-  }
-
-  main {
-    display: flex;
-    align-items: center;
-    gap: 4.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2em;
-  }
-
-  main .apresentation {
-    justify-items: left;
-  }
 
   main .apresentation .social-links {
     padding-top: 1rem;
@@ -303,6 +277,28 @@ footer .contact-email svg {
     font-size: 25px;
     display: block;
   }
+
+  footer {
+    margin-top: 6rem !important;;
+  }
+}
+
+/* LG	min-width: 48em (768px) */
+@media (min-width: 48em) {
+  .container {
+    max-width: 42rem;
+    width: 100%;
+  }
+
+  header {
+    padding-top: 1rem;
+  }
+
+  main {
+    gap: 4.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2em;
+  }
 }
 
 /* XL	min-width: 60em (960px) */
@@ -312,23 +308,15 @@ footer .contact-email svg {
   }
 
   main {
-    max-width: 65rem;
-    
+    max-width: 60rem;
   }
 
-  main .apresentation .social-links .social-links__list {
-  display: flex;
-  justify-content:left;
-  gap: 3rem;
-}
-
-  footer{
-    margin-top: 50px !important;
-
+  footer {
+    position: relative;
   }
-  .footer__box{
+
+  .footer__box {
     flex-direction: row !important;
     gap: 1rem;
-    padding: 20px;
   }
 }
